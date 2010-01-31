@@ -1,0 +1,8 @@
+HTML #home h1 a,
+HTML body.hentry #tagline a {
+	background-image: url(../i/logo.gif);
+}
+
+HTML #error h1 a {
+	background-image: url(../i/logo_error.gif);
+}

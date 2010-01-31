@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <script type="text/javascript">
+    //<![CDATA[
+    // sorry for this redirect, it's all because of GAE naked domain issue
+    if (top != self) top.location.href = location.href.replace(location.host, "www.itsabodybuildingblog.com");
+    //]]>
+  </script>
+  <title>{% if page.title %}{{ page.title }} &mdash; {% endif %}it's a &lsaquo;body&rsaquo;building blog</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="title" content="it's a body building blog"/>
+  <meta name="description" content="blog about life, web development and everything"/>
+  <meta name="keywords" content="web, development, web development, html, xhtml, css, semantic web, microformats"/>
+  <link rel="stylesheet" href="/css/styles.css" type="text/css" />
+
+  <link rel="alternate" type="application/rss+xml" title="Blog RSS 2.0 feed (Microformats powered)" href="http://feeds.feedburner.com/itsabodybuildingblog" />
+  <link rel="shortcut icon" href="/i/favicon.png" type="image/png" />
+  <!--[if lte IE 6]>
+  <link rel="stylesheet" href="/media/css/ie6.css" type="text/css" />
+  <![endif]-->
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+  {% if page.script %}<script src="/js/{{ page.script }}.js" type="text/javascript" charset="utf-8"></script>{% endif %}
+  {% if page.style %}<link rel="stylesheet" href="/css/{{ page.style }}.css" type="text/css" />{% endif %}
+</head>
+
+<body{% if page.alias %} id="{{ page.alias }}"{% elsif page.id %} id="{{ page.id | remove_first:"/" | replace:"/","-" }}"{% endif %}{% if page.layout == 'post' %} class="hentry"{% endif %}>

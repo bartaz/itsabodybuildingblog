@@ -1,0 +1,21 @@
+it's the inside of <body/> building blog
+==========================================
+
+This is all the data and templates used to build "it's a <body/>building blog.
+http://www.itsabodybuildingblog.com
+
+
+License
+=========
+
+Content of the blog that is located in files and directories listed below is protected
+with a Creative Commons License http://creativecommons.org/licenses/by-sa/3.0/
+
+Some rights are reserved. Copyright (c) Bartek Szopka
+
+  * _posts/
+  * i/
+
+All other directories and files (including configuration files, configuration, scripts, styles, etc)
+are MIT Licensed.
+

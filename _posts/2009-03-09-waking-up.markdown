@@ -1,0 +1,15 @@
+---
+layout: post
+title: Waking up
+---
+
+It has been a while (months to be precise) since my last post here. And I don't have any good excuse for not writing for such a long time...
+
+I was (and I am) kinda busy... but being busy also means lots of quite interesting things to blog about. And that's probably the reason I wanted to wake up this blog. But when I saw it after few months break I didn't like the way it looked and the way it worked... So instead of writing to a blog I started to code the new blog... Is there any simpler web application to create? So I unified the forces of [Google App Engine](http://appengine.google.com/) and [Django](http://www.djangoproject.com) and created my own pure and simple blog implementation... Finally I have the level of flexibility I needed in blogging engines.
+
+So, ladies and gentlemen, [it's a preview of new &lt;body/&gt;building blog](http://new.itsabodybuildingblog.com)...
+
+I really hope to launch it quite soon but I'm aware of some IE6 issues (should I care less?)  and comments area is still under development... And there are so many little things I'd like to add here and there but don't have time for all of them...
+
+As it will probably take ages to get everything as perfect as I'd like, I'll just launch it early and improve in time... What do you think? (If no one cares to answer, just make it a rhetorical question ;)
+

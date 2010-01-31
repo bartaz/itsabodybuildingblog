@@ -1,0 +1,12 @@
+---
+layout: post
+title: HAI WORLD!
+---
+
+<code class="snippet">
+HAI<br/> 
+CAN HAS STDIO?<br/>
+VISIBLE "HAI WORLD!"<br/>
+KTHXBYE
+</code>
+

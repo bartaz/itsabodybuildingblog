@@ -1,0 +1,19 @@
+{% include html_head.html %}
+
+<h1 class="entry-title"><a href="{{ page.url }}" rel="bookmark" title="Link to this article">{{ page.title }}</a></h1>
+<h2 id="tagline"><span>it's an article on </span><a href="/">a &lt;body/&gt;building blog</a></h2>
+
+{% assign post = page %}
+{% include post_meta.html %}
+
+<div id="content" class="entry-content">
+{% if page.summary %}
+<div class="entry-summary">
+{{ page.summary | markdown }}
+</div>
+<a name='more' id='more'></a>
+{% endif %}
+{{ content | replace:"<!--more-->","<a name='more' id='more'></a>" }}
+</div>
+
+{% include html_foot.html %}

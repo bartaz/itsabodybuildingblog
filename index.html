@@ -1,0 +1,22 @@
+---
+layout: default
+alias: home
+---
+
+<ol id="content" class="hfeed">
+{% for post in site.posts %}
+<li{% if post.alias %} id="{{ post.alias }}"{% elsif post.id %} id="{{ post.id | remove_first:"/" | replace:"/","-" }}"{% endif %} class="hentry">
+  <h2 class="entry-title"><a href="{{ post.url }}" rel="bookmark" title="Read the '{{ post.title }}' article">{{ post.title }}</a></h2>
+  {% include post_meta.html %}
+  <div class="entry-summary{% unless post.summary %} entry-content{% endunless %}">
+  {% if post.summary %}
+  {{ post.summary | markdown }}
+  <p class="read-more"><a href="{{ post.url }}#more" title="Read the rest of the '{{ post.title }}' article"><span>Read the rest of the '{{ post.title }}' article</span>...</a></p>
+  {% else %}
+  {{ post.content }}
+  {% endif %}
+  </div>
+</li>
+{% endfor %}
+</ol>
+

@@ -1,0 +1,58 @@
+﻿application: itsabodybuildingblog
+version: 3
+runtime: python
+api_version: 1
+
+default_expiration: '3650d'
+
+skip_files:
+  - ^(.*/)?app\.yaml
+  - ^(.*/)?app\.yml
+  - ^(.*/)?index\.yaml
+  - ^(.*/)?index\.yml
+  - ^(.*/)?#.*#
+  - ^(.*/)?.*~
+  - ^(.*/)?\..*
+  - ^css.*
+  - ^i/.*
+  - ^i$
+  - ^js.*
+  - ^_includes.*
+  - ^_layouts.*
+  - ^_lib.*
+  - ^_posts.*
+  - ^atom\.xml
+  - ^_config\.yml
+  - ^hyde
+  - ^index\.html
+  - ^README
+
+handlers:
+- url: /atom.xml
+  static_files: _site/atom.xml
+  upload: _site/atom.xml
+
+- url: /css
+  static_dir: _site/css
+
+- url: /i
+  static_dir: _site/i
+
+- url: /js
+  static_dir: _site/js
+
+- url: (.*)/
+  static_files: _site\1/index.html
+  upload: _site/index.html
+
+- url: (.*)
+  static_files: _site\1/index.html
+  upload: _site/index.html
+
+- url: /
+  static_dir: _site
+
+#- url: /.*
+#    static_files: _site/404.html
+#    upload: _site/404.html
+

@@ -1,0 +1,422 @@
+/*
+ * Reset CSS
+ */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b, u, i, center,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+body { line-height: 1; }
+ol, ul { list-style: none; }
+blockquote, q {  quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+:focus { outline: 0; }
+table {  border-collapse: collapse; border-spacing: 0; }
+
+/*
+ * Generic tag styles
+ */
+
+a {
+  color: #224466;
+  text-decoration: none;
+  border-bottom: 1px solid;
+}
+
+a:visited {
+  color: #555666;
+}
+
+a:hover,
+a:focus {
+  color: #224466;
+  background-color: #E4F2FF; ;/* #DDEEFF; */
+}
+
+a:active {
+  color: #224466;
+}
+
+abbr {
+  border-bottom: 1px dotted #555555;
+}
+
+body {
+  background: #224466;
+  margin: 152px 0 0;
+  font-family: Verdana, Arial, sans-serif;
+  font-size:100%;
+  line-height:1.2;
+}
+
+h1, h2, h3, h4 {
+  font-family: Futura,"Century Gothic","URW Gothic L",Helvetica,sans-serif;
+  font-weight: normal;
+  text-align: center;
+}
+
+h1 { font-size:3em; }
+h2 { font-size:2.2em; }
+h3 { font-size:1.5em; }
+h4 { font-size:1.2em; }
+
+h3, h4 {
+  margin: 1em 0;
+  text-align: center;
+  border-bottom: 1px solid #777777;
+  padding-bottom: 2px;
+}
+
+p {
+  margin-bottom: 0.5em;
+}
+
+
+code.snippet {
+  display:block;
+  padding:10px;
+  background-color: #EEEEEE;
+  margin-bottom: 0.5em;
+}
+
+code.firebug {
+  display:block;
+  padding:10px;
+  border: 1px solid #EEEEEE;
+  margin-bottom: 0.5em;
+}
+
+  code.firebug .query {
+    color: blue;
+  }
+
+  code.firebug .string {
+    color: red;
+  }
+
+  code.firebug .object {
+    color: darkGreen;
+  }
+
+  code.firebug .object {
+    color: darkGreen;
+    font-weight: bold;
+  }
+
+  code.firebug .object .value{
+    color: #777;
+    font-weight: normal;
+  }
+
+h1 a {
+  text-decoration: none;
+}
+
+.hentry .meta {
+  display:block;
+  text-align: right;
+  font-size: 0.9em;
+  line-height: 1.4;
+  color: #777;
+  padding-top: 5px;
+  margin:0 auto;
+}
+
+.hentry abbr.published {
+  border: 0pt none;
+}
+
+.hentry .entry-title a {
+  color: #224466;
+  text-transform: lowercase;
+  display:block;
+  text-decoration: none;
+  border-bottom: 2px solid;
+  padding-bottom: 2px;
+}
+
+.entry-content {
+  text-align: justify;
+  padding-top: 20px;
+}
+
+.entry-summary {
+  text-align: justify;
+  padding-top: 20px;
+  margin-bottom: 40px;
+}
+
+#content h3,
+#content h4 {
+  border-bottom: 0.07em solid;
+}
+
+#content p {
+  line-height: 1.4;
+}
+
+#content ul {
+  list-style: disc;
+  margin: 1em 0 1em 1em;
+}
+
+#content ul li {
+  margin-left: 1em;
+}
+
+#content dt {
+  font-weight: bold;
+}
+
+#content dd {
+  margin-left: 50px;
+  margin-bottom: 10px;
+}
+
+#content blockquote {
+  margin-left: 50px;
+  text-align: left;
+  font-style: italic;
+}
+
+p.read-more a {
+  border:none;
+}
+
+  p.read-more a:before { content: "("; }
+  p.read-more a:after  { content: ")"; }
+
+  p.read-more a span {
+    position:absolute;
+    left: -9999px;
+  }
+
+/* home page specific */
+
+body#home h1,
+body#error h1 {
+  position: absolute;
+  top: 0;
+  left:0;
+  width:100%;
+  padding-top: 10px;
+}
+
+body#home h1 a,
+body#error h1 a {
+  display: block;
+  width: 350px;
+  height: 215px;
+  margin: 0 auto;
+  background: url(../i/logo.png) scroll no-repeat 0 0;
+  text-indent: -9999px;
+  border: none;
+}
+
+body#home h1 a:hover,
+body#home h1 a:focus {
+  -webkit-transition: all 100ms linear; 
+  -webkit-transform: rotate(-3deg) scale(1.05);
+  -moz-transition: all 100ms linear; 
+  -moz-transform: rotate(-3deg); scale(1.05);
+}
+
+body#home #content,
+body#error #content {
+  margin:152px auto 0;
+  width: 700px;
+  padding: 65px 50px 50px;
+  background-color: white;
+}
+
+body#error {
+  background-color: #444444;
+}
+
+body#error h1 a {
+  background-image: url(../i/logo_error.png);
+}
+
+body#error {
+  background-color: #444444;
+}
+
+body#error h2 {
+  border-bottom: 2px solid;
+  padding-bottom: 2px;
+  margin-bottom: 20px;
+}
+
+/* entry page specific */
+
+body.hentry h1 {
+  width: 700px;
+  padding: 65px 50px 0;
+  font-size: 2.2em;
+  background-color: #FFFFFF;
+  margin: 0 auto;
+}
+
+body.hentry h2 {
+  font-size: 1.8em;
+}
+
+body.hentry #tagline {
+  padding-top:10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+body.hentry #tagline span {
+  text-indent: -9999px;
+  position: absolute;
+}
+
+body.hentry #tagline a {
+  display: block;
+  width: 350px;
+  height: 215px;
+  margin: 0 auto;
+  background: url(../i/logo.png) scroll no-repeat 0 0;
+  text-indent: -9999px;
+  border:none;
+}
+
+body.hentry #tagline a:hover {
+  -webkit-transition: all 100ms linear; 
+  -webkit-transform: rotate(-3deg) scale(1.05);
+  -moz-transition: all 100ms linear; 
+  -moz-transform: rotate(-3deg); scale(1.05);
+}
+
+body.hentry #content {
+  margin:0 auto;
+  width: 700px;
+  padding: 20px 50px 50px;
+  background-color: white;
+}
+
+body.hentry #content .entry-summary {
+  margin:0; padding: 0;
+}
+
+/*
+
+#commentsArea {
+  margin:0 auto;
+  width: 700px;
+  padding: 20px 50px 50px;
+  background: white;
+}
+
+#commentsArea h2 {
+  border-bottom: 1px solid;
+  padding-bottom: 2px;
+  margin-bottom: 0.5em;
+}
+
+#commentsArea.disabled {
+  color: #777;
+}
+
+#commentsArea #comments {
+  margin: 0 auto;
+}
+
+#commentsArea #comments li {
+  margin-bottom: 20px;
+  width: 500px;
+}
+
+#commentsArea #comments li.even {
+  margin-left: auto;
+}
+
+#commentsArea #comments blockquote {
+  background-color: #EEEEEE;
+  padding: 10px;
+}
+#commentsArea form fieldset {
+  width: 400px;
+  margin: 0 auto;
+}
+
+#commentsArea form dl dt {
+  margin-top: 5px;
+}
+
+#commentsArea form dl textarea,
+#commentsArea form dl input {
+  width: 100%;
+}
+
+#commentsArea form dl .optional {
+  font-size: 0.8em;
+  color: #777;
+}
+
+#commentsArea form dl .error {
+  font-size: 0.8em;
+  color: red;
+}
+
+*/
+
+body.hentry .meta {
+  width:700px;
+  padding-left:50px;
+  padding-right: 50px;
+  background-color:#FFF;
+  margin:0 auto;
+}
+
+/* Footer */
+
+#footer {
+  width: 800px;
+  color: #CCC;
+  margin: 0 auto;
+  
+  line-height: 1.2em;
+  clear:both;
+  overflow: hidden;
+  
+  font-size: 0.9em;
+}
+
+#footer a {
+  color: #999;
+}
+
+#footer a:hover {
+  color: #EEE;
+  background-color: inherit;
+}
+
+#footer li {
+  width:400px;
+  float: left;
+}
+
+#footer li p {
+  margin: 5px 0 5px;
+}
+
+#footer li.legal {
+  width: 800px;
+  font-size:0.7em;
+  line-height:1em;
+  text-align:right;
+  padding:10px 0;
+  margin-bottom:0;
+}
