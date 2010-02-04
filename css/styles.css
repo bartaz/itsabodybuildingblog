@@ -302,12 +302,36 @@ body.hentry #tagline a:hover {
 body.hentry #content {
   margin:0 auto;
   width: 700px;
-  padding: 20px 50px 50px;
+  padding: 20px 50px;
   background-color: white;
 }
 
 body.hentry #content .entry-summary {
   margin:0; padding: 0;
+}
+
+
+#disqus_thread {
+  margin:0 auto;
+  width: 700px;
+  padding: 0 50px 50px;
+  background: white;
+  position: relative;
+}
+
+#disqus_thread p {
+  line-height: 1.4;
+}
+
+#disqus_thread h3 {
+  border-bottom: 1px solid;
+  padding-bottom: 2px;
+  margin: 0 0 0.5em;
+}
+
+#disqus_thread #dsq-content .dsq-dc-logo {
+  position: absolute;
+  right: 50px;
 }
 
 /*
