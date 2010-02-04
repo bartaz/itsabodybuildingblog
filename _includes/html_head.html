@@ -7,7 +7,7 @@
     if (top != self) top.location.href = location.href.replace(location.host, "www.itsabodybuildingblog.com");
     //]]>
   </script>
-  <title>{% if page.title %}{{ page.title }} &mdash; {% endif %}it's a &lsaquo;body&rsaquo;building blog</title>
+  <title>{% if page.title %}{{ page.title }} &raquo; {% endif %}it's a &lsaquo;body&rsaquo;building blog</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   <meta name="title" content="it's a body building blog"/>
   <meta name="description" content="blog about life, web development and everything"/>
@@ -23,6 +23,10 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js" type="text/javascript" charset="utf-8"></script>
   {% if page.script %}<script src="/js/{{ page.script }}.js" type="text/javascript" charset="utf-8"></script>{% endif %}
   {% if page.style %}<link rel="stylesheet" href="/css/{{ page.style }}.css" type="text/css" />{% endif %}
+  <script type="text/javascript">
+    var disqus_identifier = "itsabodybuildingblog.com{{ page.id }}",
+        disqus_title = window.title;
+  </script>
 </head>
 
 <body{% if page.alias %} id="{{ page.alias }}"{% elsif page.id %} id="{{ page.id | remove_first:"/" | replace:"/","-" }}"{% endif %}{% if page.layout == 'post' %} class="hentry"{% endif %}>
