@@ -8,7 +8,7 @@ layout: nil
  <link href="{{ site.url }}atom.xml" rel="self"/>
  <link href="{{ site.url }}"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>{{ site.url }}</id>
+ <id>itsabodybuildingblog.com</id>
  <author>
    <name>Bartek Szopka</name>
    <email>its.me@itsabodybuildingblog.com</email>
@@ -19,7 +19,7 @@ layout: nil
    <title>{{ post.title }}</title>
    <link href="{{ site.url }}{{ post.url }}"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
-   <id>{{ site.url }}{{ post.id }}</id>
+   <id>itsabodybuildingblog.com{{ post.id }}</id>
    <content type="html">{% if post.summary %}{{ post.summary | markdown | xml_escape }}{% endif %}{{ post.content | xml_escape }}</content>
  </entry>
  {% endfor %}

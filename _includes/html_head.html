@@ -20,13 +20,12 @@
   <link rel="stylesheet" href="/media/css/ie6.css" type="text/css" />
   <![endif]-->
 
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js" type="text/javascript"></script>
+  {% if page.layout == 'post' %}<script src="/js/disqus.js" type="text/javascript"></script>{% endif %}
+
   {% if page.script %}<script src="/js/{{ page.script }}.js" type="text/javascript" charset="utf-8"></script>{% endif %}
   {% if page.style %}<link rel="stylesheet" href="/css/{{ page.style }}.css" type="text/css" />{% endif %}
-  <script type="text/javascript">
-    var disqus_identifier = "itsabodybuildingblog.com{{ page.id }}",
-        disqus_title = window.title;
-  </script>
+
 </head>
 
 <body{% if page.alias %} id="{{ page.alias }}"{% elsif page.id %} id="{{ page.id | remove_first:"/" | replace:"/","-" }}"{% endif %}{% if page.layout == 'post' %} class="hentry"{% endif %}>

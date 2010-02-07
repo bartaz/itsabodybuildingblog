@@ -314,7 +314,7 @@ body.hentry #content .entry-summary {
 #disqus_thread {
   margin:0 auto;
   width: 700px;
-  padding: 0 50px 50px;
+  padding: 1px 50px 50px;
   background: white;
   position: relative;
 }
