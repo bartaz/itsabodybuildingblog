@@ -1,0 +1,173 @@
+.separator,
+h1.entry-title,
+#tagline,
+.meta,
+#content {
+  font-family: monospace;
+  color: #CCCCCC;
+}
+
+#tagline a,
+.meta a,
+#content a, 
+.hentry .entry-title a {
+  color: #EEEEEE;
+  text-transform: none;
+}
+
+#tagline a:hover, #tagline a:focus,
+.meta a:hover, .meta a:focus,
+#content a:hover, #content a:focus,
+.hentry .entry-title a:hover, .hentry .entry-title a:focus {
+  background-color: #555555;
+}
+
+#tagline a:visited,
+.meta a:visited,
+#content a:visited,
+.hentry .entry-title a:visited {
+  color: #CCCCCC;
+}
+
+h1.entry-title,
+#tagline,
+#content h3,
+#content h4 {
+  font-family: monospace;
+  font-size: 1em;
+}
+
+body {
+  background: #2E3436;
+  margin: 1em 0 0;
+  padding: 0;
+}
+
+body.hentry #tagline {
+  position: static;
+  margin: 0 auto;
+  padding: 0;
+  width: 800px;
+  text-align: left;
+}
+
+body.hentry #tagline span { position:static; }
+body.hentry #tagline a { background-image: none; display:inline; border-bottom: 1px solid; }
+
+body.hentry #tagline a:hover,
+body.hentry #tagline a:focus {
+  background-color: #555555;
+  -webkit-transform: none;
+  -moz-transform: none;
+}
+
+body.hentry h1 {
+  font-size: 1em;
+  padding: 0;
+  background: transparent;
+  text-align: left;
+}
+
+body.hentry .entry-title a {
+  display: inline;
+  padding-bottom: 0;
+  border-width: 1px;
+}
+
+body.hentry .meta {
+  width: auto;
+  padding: 0;
+  text-align: left;
+  background: transparent;
+  font-size: 1em;
+  color: #CCCCCC;
+}
+
+.separator,
+.hentry .entry-title,
+body.hentry .meta,
+body.hentry #content {
+  line-height: 1.4;
+  margin: 0 auto;
+  padding: 0;
+  background: transparent;
+  width: 800px;
+}
+
+body.hentry #content {
+  padding-top: 1.4em;
+  padding-bottom: 1.4em;
+}
+
+body.hentry #content h3 {
+  border: none;
+  margin: 2.8em 0 1.4em;
+}
+
+body.hentry #content p {
+  text-align: left;
+  margin: 1.4em 0;
+}
+
+
+/*
+ * Comments
+ */
+
+#disqus_thread {
+  margin: 0 !important; /* override disqus inline styles */
+  padding: 20px 0;
+  width: auto;
+}
+
+#disqus_thread .loading,
+#disqus_thread .noscript,
+#disqus_thread #dsq-content {
+  width: 700px;
+  margin: 0 auto;
+  padding: 0 50px;
+  position: relative;
+}
+
+/*
+ * Styles for elements changed by JavaScript
+ */
+
+.markdown {
+  display: none;
+}
+
+.markdownized .markdown {
+  color: #AAAAAA;
+}
+
+.markdownized div.markdown  { display: block }
+.markdownized ul.markdown   { display: block }
+.markdownized span.markdown { display: inline }
+
+body.markdownized {
+  overflow-x: hidden;
+}
+
+body.markdownized #tagline {
+  margin-bottom: 1.2em;
+}
+
+.markdownized .meta .text {
+  display: none;
+}
+
+.markdownized .meta abbr,
+.markdownized .meta .author {
+  display: block;
+
+}
+
+.markdownized #content h3 {
+  text-align: left;
+}
+
+.markdownized #content ul.markdown.links {
+  list-style: none;
+  width: 100em;
+}

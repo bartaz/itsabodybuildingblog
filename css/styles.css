@@ -334,68 +334,6 @@ body.hentry #content .entry-summary {
   right: 50px;
 }
 
-/*
-
-#commentsArea {
-  margin:0 auto;
-  width: 700px;
-  padding: 20px 50px 50px;
-  background: white;
-}
-
-#commentsArea h2 {
-  border-bottom: 1px solid;
-  padding-bottom: 2px;
-  margin-bottom: 0.5em;
-}
-
-#commentsArea.disabled {
-  color: #777;
-}
-
-#commentsArea #comments {
-  margin: 0 auto;
-}
-
-#commentsArea #comments li {
-  margin-bottom: 20px;
-  width: 500px;
-}
-
-#commentsArea #comments li.even {
-  margin-left: auto;
-}
-
-#commentsArea #comments blockquote {
-  background-color: #EEEEEE;
-  padding: 10px;
-}
-#commentsArea form fieldset {
-  width: 400px;
-  margin: 0 auto;
-}
-
-#commentsArea form dl dt {
-  margin-top: 5px;
-}
-
-#commentsArea form dl textarea,
-#commentsArea form dl input {
-  width: 100%;
-}
-
-#commentsArea form dl .optional {
-  font-size: 0.8em;
-  color: #777;
-}
-
-#commentsArea form dl .error {
-  font-size: 0.8em;
-  color: red;
-}
-
-*/
-
 body.hentry .meta {
   width:700px;
   padding-left:50px;
