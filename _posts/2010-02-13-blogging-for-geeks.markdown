@@ -14,7 +14,7 @@ A while ago I discovered [GitHub](http://github.com/) and its [Pages](http://pag
 
 Finally, blogging has become as simple and powerful as I always wanted it to be. I'm a (web) developer, I love git, I'm fast at command line and I feel comfortable in my text editor. And let's be honest --- as I don't publish more than once a month --- this blog is literally a *static* website.
 
-So what you see here is a generated static HTML file and if you want to check [the Markdown source of this post](http://github.com/bartaz/itsabodybuildingblog/blob/master/_posts/2010-02-10-blogging-for-geeks.markdown), you can find it on [this blog's GitHub repository](http://github.com/bartaz/itsabodybuildingblog/).
+So what you see here is a generated static HTML file and if you want to check [the Markdown source of this post](http://github.com/bartaz/itsabodybuildingblog/blob/master/_posts/2010-02-13-blogging-for-geeks.markdown), you can find it on [this blog's GitHub repository](http://github.com/bartaz/itsabodybuildingblog/).
 
 If you wonder about the comments, there is also solution for this --- pure JavaScript comment engines, that are getting more and more popular nowadays. After a (very) short research I've chosen [Disqus](http://disqus.com/), but that's maybe a topic for some post in the future.
 
