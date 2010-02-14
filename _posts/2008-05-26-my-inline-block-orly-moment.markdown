@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "My inline-block \"O RLY?\" moment"
+title: "My inline-block 'O RLY?' moment"
 summary: |
   Last week [Chris Coyier](http://chriscoyier.net) blogged about those [CSS "Ah-ha!" moments](http://css-tricks.com/the-css-ah-ha-moment/), when you realise how cool and powerful stylesheets are. On the same day I had one of my CSS "O RLY?" moments. This one was all about `inline-block` value of the `display` property.
 ---

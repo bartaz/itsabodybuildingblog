@@ -11,7 +11,7 @@ alias: home
   <div class="entry-summary{% unless post.summary %} entry-content{% endunless %}">
   {% if post.summary %}
   {{ post.summary | markdown }}
-  <p class="read-more"><a href="{{ post.url }}#more" title="Read the rest of the '{{ post.title }}' article"><span>Read the rest of the '{{ post.title }}' article</span>...</a></p>
+  <p class="read-more"><a href="{{ post.url }}#more" title="Read the rest of the &quot;{{ post.title }}&quot; article"><span>Read the rest of the '{{ post.title }}' article</span>...</a></p>
   {% else %}
   {{ post.content }}
   {% endif %}
