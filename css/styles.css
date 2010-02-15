@@ -43,6 +43,8 @@ a:focus {
 
 a:active {
   color: #224466;
+  position: relative;
+  top: 1px; left: 1px;
 }
 
 abbr {
