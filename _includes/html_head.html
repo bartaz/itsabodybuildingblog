@@ -36,3 +36,5 @@
 </head>
 
 <body{% if page.alias %} id="{{ page.alias }}"{% elsif page.id %} id="{{ page.id | remove_first:"/" | replace:"/","-" }}"{% endif %}{% if page.layout contains 'post' %} class="hentry"{% endif %}>
+
+<div id="feed"><a href="http://feeds.feedburner.com/itsabodybuildingblog" title="Subscribe to the articles feed">Subscribe to the articles feed</a></div>
