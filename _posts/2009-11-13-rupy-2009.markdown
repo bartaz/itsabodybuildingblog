@@ -10,12 +10,13 @@ summary: |
 ![RuPy 2009](http://dl.dropbox.com/u/2801566/blog/img/rupy2009.png)
 
 
-### What I've seen
+What I've seen
+----------------
 
 To be honest I didn't put my expectations very high (I guess it's because I'm not really deep into Ruby/Python world) but I really found some speeches surprisingly interesting. I don't want to run through whole agenda here, so let me just list some of them.
 
 
-#### The Ruby Guide to \*nix Plumbing
+### The Ruby Guide to \*nix Plumbing
 
 Even though it was quite hard-core for such an early hour in the Saturday morning, Eleanor McHugh opened conference with an amazing and amusing speech about (very) low level UNIX 'plumbing' in Ruby.
 
@@ -24,7 +25,7 @@ You may think that you use high-level dynamic language like Ruby not to think ab
 If you want to taste a bit of this speech, check [the "The Ruby Guide to \*nix Plumbing" slides](http://www.slideshare.net/feyeleanor/the-ruby-guide-to-nix-plumbing-on-the-quest-for-efficiency-with-ruby-mkri "See "The Ruby Guide to *nix Plumbing" slides").
 
 
-#### MongoDB
+### MongoDB
 
 Another nice surprise was an introduction to [MongoDB](http://www.mongodb.org "Visit MongoDB official website") by Michael Dirolf. What I expected was some boring yet-another-database-engine stuff. What it turned out to be was very interesting presentation about (*buzz warning!*) open-source, high-performance, schema-free, document-oriented database.
 
@@ -33,7 +34,7 @@ As a developer used to living in the word of JavaScript and JSON I really like h
 If you want to get exited to, check [Michael's MongoDB slides](http://www.slideshare.net/mdirolf/mongodb-at-rupy "See 'MongoDB at RuPy' slides").
 
 
-#### Mastering Git
+### Mastering Git
 
 Because we started to actively use [Git](http://git-scm.com "Visit official Git website") as version control system for [Taskboard](http://taskboard.cognifide.com "Visit official Taskboard website") project, I was really interested in "Mastering Git" talk by Scott Chacon and I wasn't disappointed.
 
@@ -42,7 +43,8 @@ After over 6 month of using Git I probably didn't need a beginners introduction,
 There are no slides from this talk on [Scott's SlideShare profile](http://www.slideshare.net/chacon "Visit Scott's Chacon SlideShare profile") but you can find a lot about Git in his 'open-source' ["Pro Git" book](http://progit.org "Visit "ProGit" book website").
 
 
-### What I haven't seen
+What I haven't seen
+---------------------
 
 As I said somewhere before, I didn't put my RuPy expectations high, but there where some talks I really wanted to see and (unfortunately) I couldn't. Not even because of the conflicts between two parallel sessions on a conference, but as a result of a flu season.
 
@@ -51,9 +53,8 @@ One of those was presentation of testing [Ruby on Rails](http://rubyonrails.org/
 And another talk was a really cursed one. Obie Fernandez was to talk about developing in Ruby on Rails with MongoDB. [He couldn't make it](http://twitter.com/obie/status/5420430614), but got replaced by Durran Jordan, who made it to Poznań, but he also sick and didn't appear on RuPy. It was a big disappointment, as after an introduction on Saturday I really wanted to see MongoDB in action.
 
 
-
-### What I've got
-
+What I've got
+---------------
 For sure it was not a wasted weekend. Especially because of the food ;) and a RuPy T-shirt I won in a really geeky contest (recognizing PC parts with covered eyes --- I was lucky to get some ancient ethernet controller).
 
 However I'm not really sure if I'll go to RuPy next year. I guess it will depend on how my interests in dynamic languages evolve and what speeches will appear in their agenda.

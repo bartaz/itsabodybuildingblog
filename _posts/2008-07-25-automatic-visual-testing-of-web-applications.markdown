@@ -9,7 +9,8 @@ summary: |
   Is it really possible to automate visual testing? And if it is, will it be useful?
 ---
 
-### What it a Visual Test?
+What it a Visual Test?
+------------------------
 
 If you are a web designer or developer working on a website, you look at it in a browser, click through it and you see if everything is fine. You check, if the font is as big as it should, if the background is blue, if there is no additional padding somewhere between the sidebar modules, or if this floated div got totally messed up in IE6.
 
@@ -20,7 +21,8 @@ All we have here is just two actions: *look* at a page and *compare* it with som
 But is it possible to automate this process?
 
 
-### Automatic Visual Tests
+Automatic Visual Tests
+------------------------
 
 It seems that it's quite simple: *look* and *compare*. As I said before, in some cases reference screen-shots may already exist for human testers, so if a tester can compare what he sees in a browser, with what he has on a screen-shot, maybe computer can do the same thing?
 
@@ -31,7 +33,8 @@ What we have is a website (or a web application) to test. Let's look at is as ju
 So all our automatic tool needs to do, is to open each screen in a browser, take a screen-shot of it (this is the *look* part) and compare it (yes, *compare*) with a reference screen-shot. Seems to be extremely simple process to automate, but after a little bit of thinking it shows up, that this compare part may become really tricky.
 
 
-### Problems with visual comparison
+Problems with visual comparison
+---------------------------------
 
 Comparing images is a very cognitive process and human mind is extremely powerful in this case, but it doesn't really work well with computers. It's really hard for a machine to look at the image, as all it has is a grid of pixels. A lot of work and research was made in the field of pattern recognition to help computers understand and process images, but that's not the thing we are looking at right now, so let's just stick to our problem of comparing two images.
 
@@ -46,7 +49,8 @@ It would be great to be able to create and compare screen-shots of just a parts 
 But that's another long story and it's not a place to dig into details. I may do it some other time if there will be an interest.
 
 
-### The Tool
+The Tool
+----------
 
 So I hope you get the idea of visual testing, but how about a real tool for this task?
 

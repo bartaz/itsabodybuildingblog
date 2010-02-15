@@ -7,7 +7,8 @@ summary: |
   The process will be very similar to one we used for home page, so if you haven't read [previous article](/semantic-mark-up-of-the-home-page/), please do it as it will be really helpful. If you already been there don't hesitate and [read on](#more) :)
 ---
 
-### Article page check-list
+Article page check-list
+-------------------------
 
 Of course we start with a little check-list. What are the contents of article page?
 
@@ -33,7 +34,9 @@ Yep... seems to be quite a lot of it wont be that hard, you'll see.
 
   *[CAPTCHA]: Completely Automated Public Turing Test to Tell Computers and Humans Apart
 
-### Article header
+
+Article header
+----------------
 
 When we where talking about home page, the blog title was our main **`<h1>`** header and you may be tempted to do the same on an article page. We are still on a blog aren't we? So the blog title is the most important thing... is it really?
 
@@ -78,7 +81,9 @@ Because it's very likely that the list of links in the navigation will grow. May
 
 So now we have nice semantic header with accessibility enhancement. How cool is that?
 
-### Article contents
+
+Article contents
+------------------
 
 So... The article contents. There is only one article on a page, so no lists here, really :)
 We will just use plain **`<div>`**.
@@ -91,7 +96,9 @@ We will just use plain **`<div>`**.
 
 And that's it really when it comes to content. Just remember to put text it into paragraphs and use headers wisely.
 
-### Article's foot-note
+
+Article's foot-note
+---------------------
 
 Here is where we want to have author's name, published date and let's say a list of tags.
 
@@ -132,7 +139,9 @@ But still this paragraph and list seem to be separate things in document flow. I
 &lt;/<strong>div</strong>&gt;
 </code>
 
-### List of comments
+
+List of comments
+------------------
 
 We are all used to the concept of the lists, aren't we? So it wont be hard to mark up the list of comments.
 
@@ -161,7 +170,9 @@ But why the **`<cite>`** and **`<blockquote>`** elements? Are we really *quoting
 
 For sure it's not a quote from any other website or a book, but we are somehow quoting commenter's words or thoughts. That's why I think **`<blockquote>`** as comment contents and a **`<cite>`** element to indicate commenter's name and address are semantically correct in this place.
 
-### Comment form
+
+Comment form
+--------------
 
 Forms in general are a really long story and a great pain for designers and web developers. But the real pain starts when it comes to styling and we will worry about it a bit later. Let's now focus on the mark-up. It's quite straightforward, especially in such simple example as comment form.
 
@@ -193,11 +204,13 @@ The easiest way to get around it is the use of **`<p>`** paragraphs:
 
 It will be enough for now, but a little more magic will be needed when we will come to styling this form with CSS. But we don't worry about it today.
 
-### That's all folks
+
+That's all folks
+------------------
 
 That was quite a long way but in the end we have a really nice semantic mark-up on this article page. It wasn't that hard, right? And we are just a small step from applying even more semantic meaning with Microformats (we already did it with tags, remember?) but this is a subject of a brand new article.
 
-#### Want some more?
+### Want some more?
 
 If you don't have enough in this topic just have a look at one of these:
 

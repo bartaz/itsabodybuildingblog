@@ -63,11 +63,12 @@ h1, h2, h3, h4 {
   text-align: center;
 }
 
-h1 { font-size:3em; }
-h2 { font-size:2.2em; }
-h3 { font-size:1.5em; }
-h4 { font-size:1.2em; }
+h1 { font-size:2.2em; }
+h2 { font-size:1.5em; }
+h3 { font-size:1.3em; }
+h4 { font-size:1.0em; }
 
+body.hentry h2,
 h3, h4 {
   margin: 1em 0;
   text-align: center;
@@ -154,6 +155,7 @@ h1 a {
   margin-bottom: 40px;
 }
 
+body.hentry #content h2,
 #content h3,
 #content h4 {
   border-bottom: 0.07em solid;
@@ -249,7 +251,12 @@ body#error {
   background-color: #444444;
 }
 
+body#home h2 {
+  font-size: 2.2em;
+}
+
 body#error h2 {
+  font-size: 2.2em;
   border-bottom: 2px solid;
   padding-bottom: 2px;
   margin-bottom: 20px;
@@ -263,10 +270,6 @@ body.hentry h1 {
   font-size: 2.2em;
   background-color: #FFFFFF;
   margin: 0 auto;
-}
-
-body.hentry h2 {
-  font-size: 1.8em;
 }
 
 body.hentry #tagline {

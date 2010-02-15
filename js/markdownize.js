@@ -1,19 +1,21 @@
 $(document).ready(function () {
 
-  var separator = "<div class=\"markdown separator\">---</div>",
-      span = function (text) {
-        return "<span class=\"markdown\">" + text + "</span>";
-      };
+  function separator(text) {
+    return "<div class=\"markdown separator\">" + text.replace(/./g, "-") + "</div>"
+  };
+  function span(text) {
+    return "<span class=\"markdown\">" + text + "</span>";
+  };
   
   // yaml meta data
   $("h1.entry-title").prepend(span("title: "))
-    .before(separator)
+    .before(separator("---"));
 
   $("#tagline")
     .insertBefore($(".entry-title"))
     .prepend(span("# "));
   $("p.meta")
-    .after(separator)
+    .after(separator("---"))
     .find(".author").prepend(span("author: ")).end()
     .find(".published").prepend(span("date: "));
   
@@ -22,6 +24,8 @@ $(document).ready(function () {
   $("#content")
     .append(links)
     .find("em").prepend(span("*")).append(span("*")).end()
+    .find("strong").prepend(span("**")).append(span("**")).end()
+    .find("h2").append(function () { return separator($(this).text() + "--") }).end()
     .find("h3").prepend(span("### ")).end()
     .find("a[href]")
       .before(span("[")).after(span("]"))

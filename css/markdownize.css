@@ -31,6 +31,7 @@ h1.entry-title,
 
 h1.entry-title,
 #tagline,
+#content h2,
 #content h3,
 #content h4 {
   font-family: monospace;
@@ -99,7 +100,9 @@ body.hentry #content {
   padding-bottom: 1.4em;
 }
 
-body.hentry #content h3 {
+body.hentry #content h2,
+body.hentry #content h3,
+body.hentry #content h4 {
   border: none;
   margin: 2.8em 0 1.4em;
 }
@@ -163,7 +166,9 @@ body.markdownized #tagline {
 
 }
 
-.markdownized #content h3 {
+.markdownized #content h2,
+.markdownized #content h3,
+.markdownized #content h4 {
   text-align: left;
 }
 

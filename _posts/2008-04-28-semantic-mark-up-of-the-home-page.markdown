@@ -16,7 +16,9 @@ Even such a simple example of a blog starts to be a long long story when you dis
 
 So what are the contents of blog's home page?
 
-### Home page check-list
+
+Home page check-list
+----------------------
 
 Let's create a little check-list of things we'd like to see on a home page.
 
@@ -33,7 +35,9 @@ additional info
 
 As we now know what logical parts of page we will have and what they semantically mean we can move on and code this structure.
 
-### Page header
+
+Page header
+-------------
 
 The simple one. As this is a blog's home page, the blog's title is what we need in a header and this is the most important header on the entire page. So what else can we use for it as **`<h1>`** element?
 
@@ -58,7 +62,9 @@ We also wanted to have some short description of a blog. If you treat it as a su
 
 That's it when in comes to header. Now more crazy stuff :)
 
-### List of the articles
+
+List of the articles
+----------------------
 
 In every blogging service I've touched, in every template I've seen, there was the same schema used: there was some posts container made with **`<div>`** element and inside of it a pack of **`<div>`** elements representing posts...
 
@@ -101,7 +107,9 @@ In my template though I will stick with ordered list. It's simple and quite obvi
 
 So let's move on to the last point on our check-list.
 
-### Footer modules
+
+Footer modules
+----------------
 
 Now, as we are used to the concept of lists, it shouldn't be hard to guess what kind of elements I propose for the list of modules in the footer.
 
@@ -119,11 +127,13 @@ Yes. List of course. It simply can be unordered list this time as footer modules
 
 Simple, isn't it?
 
-### That's all folks
+
+That's all folks
+------------------
 
 So we've just ran through all of our small list of home page sections and we've learned a little bit of semantic thinking and list elements usage. This of course is not enough and I'llill dig into more details later on this blog.
 
-#### Want some more?
+### Want some more?
 
 As we where mostly talking about lists today, here are some resources to check in this subject.
 

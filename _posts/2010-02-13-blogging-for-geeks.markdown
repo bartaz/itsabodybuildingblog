@@ -8,7 +8,8 @@ summary: |
 
 ---
 
-### Static blogging
+Static blogging
+-----------------
 
 A while ago I discovered [GitHub](http://github.com/) and its [Pages](http://pages.github.com/). They simply allow to publish static content by pushing it into your git repository. But to make publishing easier they also added [Jekyll](http://github.com/mojombo/jekyll/) --- a simple static site generator, that allows to create page layouts and fill them with content taken from plain text files (written in pure HTML, Markdown or Textile).
 
@@ -18,7 +19,9 @@ So what you see here is a generated static HTML file and if you want to check [t
 
 If you wonder about the comments, there is also solution for this --- pure JavaScript comment engines, that are getting more and more popular nowadays. After a (very) short research I've chosen [Disqus](http://disqus.com/), but that's maybe a topic for some post in the future.
 
-### I'm not the only one
+
+I'm not the only one
+----------------------
 
 Am I crazy or something? This is really geeky to run a blog by building a static site from version control repository. But fortunately it seems that I'm not alone in my craziness. Recently [UsabilityPost](http://www.usabilitypost.com/2010/02/06/blogging-simplified/) have been ported to [Toto](http://www.cloudhead.io/toto) --- that is a very close Jekyll's cousin --- and quite an interesting discussion has started about how this type of publishing fits into bloggers needs. On the other hand project's wiki on GitHub provides also quite [a long list of sites that are using Jekyll](http://wiki.github.com/mojombo/jekyll/sites).
 
