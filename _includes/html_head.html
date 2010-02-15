@@ -21,7 +21,14 @@
   <![endif]-->
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js" type="text/javascript"></script>
-  {% if page.layout contains 'post' %}<script src="/js/disqus.js" type="text/javascript"></script>{% endif %}
+  {% if page.layout contains 'post' %}
+  <script type="text/javascript">
+    // set-up DISQUS params
+    var disqus_identifier = "itsabodybuildingblog.com{{ page.id }}",
+        // disqus_developer = 1,
+        disqus_title = "{{ page.title }}";
+  </script>
+  <script src="/js/disqus.js" type="text/javascript"></script>{% endif %}
 
   {% if page.script %}<script src="/js/{{ page.script }}.js" type="text/javascript" charset="utf-8"></script>{% endif %}
   {% if page.style %}<link rel="stylesheet" href="/css/{{ page.style }}.css" type="text/css" />{% endif %}

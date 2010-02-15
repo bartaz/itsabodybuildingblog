@@ -1,10 +1,5 @@
 // Loads DISQUS comments on a post page
 
-// set-up DISQUS params
-var disqus_identifier = "itsabodybuildingblog.com{{ page.id }}",
-    // disqus_developer = 1,
-    disqus_title = "{{ page.title }}";
-
 // include DISQUS when page loaded
 $(document).ready(function(){
   $("#disqus_thread").html("<p class='loading'>Loading comments, please wait...</p>");
