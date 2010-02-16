@@ -1,12 +1,12 @@
 $(document).ready(function () {
 
   function separator(text) {
-    return "<div class=\"markdown separator\">" + text.replace(/./g, "-") + "</div>"
+    return "<div class=\"markdown separator\">" + text.replace(/./g, "-") + "</div>";
   };
   function span(text) {
     return "<span class=\"markdown\">" + text + "</span>";
   };
-  
+
   // yaml meta data
   $("h1.entry-title").prepend(span("title: "))
     .before(separator("---"));
@@ -18,7 +18,7 @@ $(document).ready(function () {
     .after(separator("---"))
     .find(".author").prepend(span("author: ")).end()
     .find(".published").prepend(span("date: "));
-  
+
   // markdown
   var links = $("<ul class=\"links markdown\">");
   $("#content")
@@ -38,6 +38,7 @@ $(document).ready(function () {
         
         links.append("<li>[<a href=\"" + href + "\">" + text + "</a>]: " + space + href + "</li>");
       });
-  
+
   $('body').addClass('markdownized');
+
 });

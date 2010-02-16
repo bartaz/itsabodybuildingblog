@@ -52,7 +52,7 @@ body.hentry #tagline {
   text-align: left;
 }
 
-body.hentry #tagline span { position:static; }
+body.hentry #tagline span { position:static; text-indent: 0; }
 body.hentry #tagline a { background-image: none; display:inline; border-bottom: 1px solid; }
 
 body.hentry #tagline a:hover,
@@ -175,4 +175,5 @@ body.markdownized #tagline {
 .markdownized #content ul.markdown.links {
   list-style: none;
   width: 100em;
+  text-align: left;
 }

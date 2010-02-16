@@ -1,8 +1,31 @@
-HTML #home h1 a,
-HTML body.hentry #tagline a {
-	background-image: url(../i/logo.gif);
+body#home h1 a,
+body.hentry #tagline a {
+  background-image: url(../i/logo.gif);
 }
 
-HTML #error h1 a {
-	background-image: url(../i/logo_error.gif);
+body#error h1 a {
+  background-image: url(../i/logo_error.gif);
 }
+
+#feed {
+  position: absolute;
+}
+
+#feed a {
+  background-image: url(../i/feed.gif);
+}
+
+
+/* markdownized.css */
+
+HTML .markdownized #content ul.markdown.links {
+  width: 750px
+}
+
+HTML .markdownized #content ul.markdown.links li {
+  width: 750px;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
