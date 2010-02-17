@@ -1,0 +1,53 @@
+/*
+ * Comments
+ */
+
+#comments {
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: Verdana, Arial, sans-serif;
+  padding: 1em;
+}
+
+#comments a {
+  color: #224466;
+  text-decoration: none;
+}
+
+#comments a:visited {
+  color: #555666;
+}
+
+#comments a:hover,
+#comments a:focus {
+  color: #224466;
+  background-color: #E4F2FF;
+}
+
+#comments h2,
+#comments h3,
+#comments h4 {
+  font-family: Futura,"Century Gothic","URW Gothic L",Helvetica,sans-serif;
+  font-weight: normal;
+  text-align: center;
+  margin: 1em 0;
+  border-bottom: 1px solid;
+  padding-bottom: 2px;
+}
+
+#comments h2 { font-size:1.5em; }
+#comments h3 { font-size:1.3em; }
+#comments h4 { font-size:1.0em; }
+
+#comments h2,
+#comments #disqus_thread {
+  width: 700px;
+  margin: 0 auto 0.5em;
+  position: relative;
+}
+
+#comments #dsq-content .dsq-dc-logo {
+  position: absolute !important; /* override default disqus style */
+  right: 0;
+}
+

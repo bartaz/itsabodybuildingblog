@@ -1,25 +1,8 @@
-/*
- * Reset CSS
- */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var, b, u, i, center,
-dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  background: transparent;
-}
-body { line-height: 1; }
-ol, ul { list-style: none; }
-blockquote, q {  quotes: none; }
-blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
-:focus { outline: 0; }
-table {  border-collapse: collapse; border-spacing: 0; }
+---
+layout: nil
+---
+
+{% include css/reset.css %}
 
 /*
  * Generic tag styles
@@ -203,26 +186,6 @@ p.read-more a {
     left: -9999px;
   }
 
-#feed {
-  position: fixed;
-  top: 0; right: 50px;
-  z-index: 10;
-}
-
-#feed a {
-  text-indent: -9999px;
-  border: 0;
-  display: block;
-  width: 50px; height: 50px;
-  background: url(/i/feed.png) no-repeat 0 0;
-  position: relative;
-  top: -15px;
-}
-
-#feed a:hover {
-  top: -10px;
-}
-
 /* home page specific */
 
 body#home h1,
@@ -324,6 +287,14 @@ body.hentry #tagline a:hover {
   -moz-transform: rotate(-3deg); scale(1.05);
 }
 
+body.hentry .meta {
+  width:700px;
+  padding-left:50px;
+  padding-right: 50px;
+  background-color:#FFF;
+  margin:0 auto;
+}
+
 body.hentry #content {
   margin:0 auto;
   width: 700px;
@@ -335,75 +306,32 @@ body.hentry #content .entry-summary {
   margin:0; padding: 0;
 }
 
+{% include css/comments.css %}
 
-#disqus_thread {
-  margin:0 auto;
-  width: 700px;
-  padding: 1px 50px 50px;
-  background: white;
-  position: relative;
+#comments {
+  width: 800px;
+  padding: 0 0 50px;
+  margin: 0 auto;
 }
 
-#disqus_thread p {
-  line-height: 1.4;
-}
-
-#disqus_thread h3 {
-  border-bottom: 1px solid;
-  padding-bottom: 2px;
-  margin: 0 0 0.5em;
-}
-
-#disqus_thread #dsq-content .dsq-dc-logo {
-  position: absolute;
-  right: 50px;
-}
-
-body.hentry .meta {
-  width:700px;
-  padding-left:50px;
-  padding-right: 50px;
-  background-color:#FFF;
-  margin:0 auto;
-}
+{% include css/feed.css %}
 
 /* Footer */
 
 #footer {
   width: 800px;
-  color: #CCC;
-  margin: 0 auto;
-  
-  line-height: 1.2em;
-  clear:both;
-  overflow: hidden;
-  
-  font-size: 0.9em;
+  margin: 10px auto;
+  color: #CCCCCC;
+  font-size:0.7em;
+  text-align:right;
 }
 
 #footer a {
-  color: #999;
+  color: #999999;
 }
 
 #footer a:hover {
-  color: #EEE;
+  color: #EEEEEE;
   background-color: inherit;
 }
 
-#footer li {
-  width:400px;
-  float: left;
-}
-
-#footer li p {
-  margin: 5px 0 5px;
-}
-
-#footer li.legal {
-  width: 800px;
-  font-size:0.7em;
-  line-height:1em;
-  text-align:right;
-  padding:10px 0;
-  margin-bottom:0;
-}

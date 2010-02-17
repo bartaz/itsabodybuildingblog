@@ -1,179 +1,97 @@
-.separator,
-h1.entry-title,
-#tagline,
-.meta,
-#content {
+---
+layout: nil
+---
+
+{% include css/reset.css %}
+
+{% include css/feed.css %}
+
+body {
+  background-color: #2E3436;
+  margin: 1em 0;
+
   font-family: monospace;
   color: #CCCCCC;
+  line-height: 1.4;
 }
 
-#tagline a,
-.meta a,
-#content a, 
-.hentry .entry-title a {
+a {
   color: #EEEEEE;
-  text-transform: none;
+  text-decoration: none;
+  border-bottom: 1px solid;
 }
 
-#tagline a:hover, #tagline a:focus,
-.meta a:hover, .meta a:focus,
-#content a:hover, #content a:focus,
-.hentry .entry-title a:hover, .hentry .entry-title a:focus {
+a:hover,
+a:focus {
   background-color: #555555;
 }
 
-#tagline a:visited,
-.meta a:visited,
-#content a:visited,
-.hentry .entry-title a:visited {
+a:visited {
   color: #CCCCCC;
 }
 
-h1.entry-title,
+h1, h2, h3, h4 {
+  font-weight: normal;
+}
+
 #tagline,
+.separator,
+h1.entry-title,
+.meta,
+#content,
+#footer {
+  margin: 0 auto;
+  width: 800px;
+}
+
+#content {
+  margin: 1.4em auto;
+}
+
 #content h2,
 #content h3,
 #content h4 {
-  font-family: monospace;
-  font-size: 1em;
-}
-
-body {
-  background: #2E3436;
-  margin: 1em 0 0;
-  padding: 0;
-}
-
-body.hentry #tagline {
-  position: static;
-  margin: 0 auto;
-  padding: 0;
-  width: 800px;
-  text-align: left;
-}
-
-body.hentry #tagline span { position:static; text-indent: 0; }
-body.hentry #tagline a { background-image: none; display:inline; border-bottom: 1px solid; }
-
-body.hentry #tagline a:hover,
-body.hentry #tagline a:focus {
-  background-color: #555555;
-  -webkit-transform: none;
-  -moz-transform: none;
-}
-
-body.hentry h1 {
-  font-size: 1em;
-  padding: 0;
-  background: transparent;
-  text-align: left;
-}
-
-body.hentry .entry-title a {
-  display: inline;
-  padding-bottom: 0;
-  border-width: 1px;
-}
-
-body.hentry .meta {
-  width: auto;
-  padding: 0;
-  text-align: left;
-  background: transparent;
-  font-size: 1em;
-  color: #CCCCCC;
-}
-
-.separator,
-.hentry .entry-title,
-body.hentry .meta,
-body.hentry #content {
-  line-height: 1.4;
-  margin: 0 auto;
-  padding: 0;
-  background: transparent;
-  width: 800px;
-}
-
-body.hentry #content {
-  padding-top: 1.4em;
-  padding-bottom: 1.4em;
-}
-
-body.hentry #content h2,
-body.hentry #content h3,
-body.hentry #content h4 {
-  border: none;
   margin: 2.8em 0 1.4em;
 }
 
-body.hentry #content p {
-  text-align: left;
+#content p {
   margin: 1.4em 0;
 }
 
-
-/*
- * Comments
- */
-
-#disqus_thread {
-  margin: 0 !important; /* override disqus inline styles */
-  padding: 20px 0;
-  width: auto;
+#footer {
+  font-size: 0.8em;
+  margin: 1.4em auto;
 }
 
-#disqus_thread .loading,
-#disqus_thread .noscript,
-#disqus_thread #dsq-content {
-  width: 700px;
-  margin: 0 auto;
-  padding: 0 50px;
-  position: relative;
-}
+
+{% include css/comments.css %}
+
 
 /*
  * Styles for elements changed by JavaScript
  */
 
-.markdown {
-  display: none;
-}
+/* don't show them until script adds stuff */
+.markdown { display: none; }
 
-.markdownized .markdown {
-  color: #AAAAAA;
-}
+.markdownized div.markdown,
+.markdownized ul.markdown   { display: block; }
+.markdownized span.markdown { display: inline; }
 
-.markdownized div.markdown  { display: block }
-.markdownized ul.markdown   { display: block }
-.markdownized span.markdown { display: inline }
 
-body.markdownized {
-  overflow-x: hidden;
-}
+.markdownized .markdown { color: #AAAAAA; }
 
-body.markdownized #tagline {
-  margin-bottom: 1.2em;
-}
+.markdownized #tagline { margin-bottom: 1.2em; }
 
-.markdownized .meta .text {
-  display: none;
-}
+.markdownized .meta .text { display: none; }
 
 .markdownized .meta abbr,
-.markdownized .meta .author {
-  display: block;
+.markdownized .meta .author { display: block; }
 
-}
+.markdownized { overflow-x: hidden; } /* hide scrollbar for long links in list */
 
-.markdownized #content h2,
-.markdownized #content h3,
-.markdownized #content h4 {
-  text-align: left;
-}
-
-.markdownized #content ul.markdown.links {
-  list-style: none;
+.markdownized ul.markdown.links {
+  margin-left: 2em;
   width: 100em;
-  text-align: left;
 }
+

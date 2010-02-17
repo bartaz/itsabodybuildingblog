@@ -1,0 +1,21 @@
+#feed {
+  position: fixed;
+  top: 0; right: 50px;
+  z-index: 10;
+}
+
+#feed a {
+  text-indent: -9999px;
+  border: 0;
+  display: block;
+  width: 50px; height: 50px;
+  background: url(/i/feed.png) no-repeat 0 0;
+  position: relative;
+  top: -15px;
+}
+
+#feed a:hover,
+#feed a:focus {
+  top: -10px;
+}
+
