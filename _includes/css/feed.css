@@ -19,3 +19,6 @@
   top: -10px;
 }
 
+body.ie6 #feed   { position: absolute; }
+body.ie6 #feed a { background-image: url(../i/feed.gif); }
+

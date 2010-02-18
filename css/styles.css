@@ -335,3 +335,14 @@ body.hentry #content .entry-summary {
   background-color: inherit;
 }
 
+
+
+body.ie6#home h1 a,
+body.ie6.hentry #tagline a {
+  background-image: url(../i/logo.gif);
+}
+
+body.ie6#error h1 a {
+  background-image: url(../i/logo_error.gif);
+}
+

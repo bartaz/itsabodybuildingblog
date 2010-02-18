@@ -95,3 +95,13 @@ h1.entry-title,
   width: 100em;
 }
 
+body.ie6.markdownized ul.links {
+  width: 750px
+}
+
+body.ie6.markdownized ul.links li {
+  width: 750px;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
