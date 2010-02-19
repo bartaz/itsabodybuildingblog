@@ -1,4 +1,4 @@
 url: http://www.itsabodybuildingblog.com
 permalink: /:title/
-exclude: [README, hyde, index.yaml, app.yaml]
+exclude: [README, hyde, index.yaml]
 
