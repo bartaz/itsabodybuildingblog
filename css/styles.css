@@ -209,7 +209,9 @@ body#error h1 a {
 }
 
 body#home h1 a:hover,
-body#home h1 a:focus {
+body#home h1 a:focus,
+body#error h1 a:hover,
+body#error h1 a:focus {
   -webkit-transition: all 100ms linear; 
   -webkit-transform: rotate(-3deg) scale(1.05);
   -moz-transition: all 100ms linear; 

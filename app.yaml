@@ -1,58 +1,38 @@
-﻿application: itsabodybuildingblog
+---
+layout: nil
+---
+
+application: itsabodybuildingblog
 version: 3
 runtime: python
 api_version: 1
 
 default_expiration: '3650d'
 
-skip_files:
-  - ^(.*/)?app\.yaml
-  - ^(.*/)?app\.yml
-  - ^(.*/)?index\.yaml
-  - ^(.*/)?index\.yml
-  - ^(.*/)?#.*#
-  - ^(.*/)?.*~
-  - ^(.*/)?\..*
-  - ^css.*
-  - ^i/.*
-  - ^i$
-  - ^js.*
-  - ^_includes.*
-  - ^_layouts.*
-  - ^_lib.*
-  - ^_posts.*
-  - ^atom\.xml
-  - ^_config\.yml
-  - ^hyde
-  - ^index\.html
-  - ^README
-
 handlers:
 - url: /atom.xml
-  static_files: _site/atom.xml
-  upload: _site/atom.xml
+  static_files: atom.xml
+  upload: atom.xml
 
 - url: /css
-  static_dir: _site/css
+  static_dir: css
 
 - url: /i
-  static_dir: _site/i
+  static_dir: i
 
 - url: /js
-  static_dir: _site/js
+  static_dir: js
 
-- url: (.*)/
-  static_files: _site\1/index.html
-  upload: _site/index.html
-
-- url: (.*)
-  static_files: _site\1/index.html
-  upload: _site/index.html
+{% for post in site.posts %}
+- url: {{ post.id }}/?
+  static_files: {{ post.id | remove_first:"/" }}/index.html
+  upload: {{ post.id | remove_first:"/" }}/index.html
+{% endfor %}
 
 - url: /
-  static_dir: _site
+  static_files: index.html
+  upload: index.html
 
-#- url: /.*
-#    static_files: _site/404.html
-#    upload: _site/404.html
+- url: .*
+  script: main.py
 
