@@ -1,10 +1,10 @@
-{% include html_head.html %}
+{% include html/intro.html %}
 
 <h1 class="entry-title"><a href="{{ page.url }}" rel="bookmark" title="Link to this article">{{ page.title }}</a></h1>
 <p id="tagline"><span>it's an article on </span><a href="/">a &lt;body/&gt;building blog</a></p>
 
 {% assign post = page %}
-{% include post_meta.html %}
+{% include html/post_meta.html %}
 
 <div id="content" class="entry-content">
 {% if page.summary %}
@@ -23,4 +23,4 @@
   </div>
 </div>
 
-{% include html_foot.html %}
+{% include html/outro.html %}
