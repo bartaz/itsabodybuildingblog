@@ -308,9 +308,9 @@ body.hentry #content .entry-summary {
   margin:0; padding: 0;
 }
 
-{% include css/comments.css %}
+{% include css/discuss.css %}
 
-#comments {
+#discuss {
   width: 800px;
   padding: 0 0 50px;
   margin: 0 auto;

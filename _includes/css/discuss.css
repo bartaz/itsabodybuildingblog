@@ -1,32 +1,32 @@
 /*
- * Comments
+ * Discussion
  */
 
-#comments {
+#discuss {
   background-color: #FFFFFF;
   color: #000000;
   font-family: Verdana, Arial, sans-serif;
   padding: 1em;
 }
 
-#comments a {
+#discuss a {
   color: #224466;
   text-decoration: none;
 }
 
-#comments a:visited {
+#discuss a:visited {
   color: #555666;
 }
 
-#comments a:hover,
-#comments a:focus {
+#discuss a:hover,
+#discuss a:focus {
   color: #224466;
   background-color: #E4F2FF;
 }
 
-#comments h2,
-#comments h3,
-#comments h4 {
+#discuss h2,
+#discuss h3,
+#discuss h4 {
   font-family: Futura,"Century Gothic","URW Gothic L",Helvetica,sans-serif;
   font-weight: normal;
   text-align: center;
@@ -35,18 +35,26 @@
   padding-bottom: 2px;
 }
 
-#comments h2 { font-size:1.5em; }
-#comments h3 { font-size:1.3em; }
-#comments h4 { font-size:1.0em; }
+#discuss h2 { font-size:1.5em; }
+#discuss h3 { font-size:1.3em; }
+#discuss h4 { font-size:1.0em; }
 
-#comments h2,
-#comments #disqus_thread {
+#discuss p {
+  line-height: 1.4;
+}
+
+#discuss h2,
+#discuss #disqus_thread {
   width: 700px;
   margin: 0 auto 0.5em;
   position: relative;
 }
 
-#comments #dsq-content .dsq-dc-logo {
+#discuss #disqus_thread.loading #dsq-content {
+  display: none;
+}
+
+#discuss #dsq-content .dsq-dc-logo {
   position: absolute !important; /* override default disqus style */
   right: 0;
 }
