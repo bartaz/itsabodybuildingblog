@@ -9,7 +9,7 @@ JS = FileList[File.join(OUTPUT_PATH, '/**/*.js')]
 task :default => :build
 
 desc "Builds the site from scratch"
-task :build => ['clean', 'jekyll:run', 'minify:html']
+task :build => ['clean', 'jekyll', 'minify']
 
 desc "Cleans output directory"
 task :clean do
@@ -17,6 +17,9 @@ task :clean do
     sh 'rm ' + ('-r ' if File.directory? f) + f
   end
 end
+
+desc "Deploys site on server"
+task :deploy => ['gae:update']
 
 
 namespace "gae" do
@@ -36,7 +39,7 @@ namespace "gae" do
 end
 
 desc "Runs Jekyll (shortcut)"
-task :jekyll => ["jekyll:auto_server"]
+task :jekyll => ["jekyll:run"]
 
 namespace "jekyll" do
 
@@ -46,7 +49,7 @@ namespace "jekyll" do
   end
 
   desc "Runs Jekyll with auto-regeneration and server"
-  task :auto_server do
+  task :server do
     jekyll "--auto", "--server"
   end
 
@@ -68,6 +71,9 @@ namespace "jekyll" do
   end
 end
 
+
+desc "Minifies everything"
+task :minify => ['minify:html', 'minify:js']
 
 namespace "minify" do
 
