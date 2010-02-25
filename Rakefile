@@ -4,6 +4,7 @@ OUTPUT_PATH = './_site'
 
 CLEAN = FileList[OUTPUT_PATH]
 HTML = FileList[File.join(OUTPUT_PATH, '/**/*.html')]
+JS = FileList[File.join(OUTPUT_PATH, '/**/*.js')]
 
 task :default => :build
 
@@ -79,5 +80,16 @@ namespace "minify" do
     end
   end
 
+  desc "Minifies JavaScript files using Google Closure Compiler"
+  task :js do
+    JS.each do |file|
+     sh "java -jar _lib/compiler.jar --js  #{file} > .tmp"
+     sh "cp .tmp #{file}"
+     sh "rm .tmp"
+    end
+  end
+
 end
+
+
 
