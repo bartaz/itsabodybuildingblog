@@ -1,10 +1,11 @@
-verbose false
+#verbose false
 
 OUTPUT_PATH = './_site'
 
 CLEAN = FileList[OUTPUT_PATH]
 HTML = FileList[File.join(OUTPUT_PATH, '/**/*.html')]
 JS = FileList[File.join(OUTPUT_PATH, '/**/*.js')]
+CSS = FileList[File.join(OUTPUT_PATH, '/**/*.css')]
 
 task :default => :build
 
@@ -20,6 +21,32 @@ end
 
 desc "Deploys site on server"
 task :deploy => ['gae:update']
+
+
+namespace "drafts" do
+
+  DRAFT_SUFIX = '_draft'
+
+  desc "Copies drafts into posts directory"
+  task :include do
+    FileList["_drafts/*.*"].each do |f|
+      sh "cp #{f} _posts/#{draft_name f}"
+    end
+  end
+
+  desc "Removes drafts from posts directory"
+  task :exclude do
+    FileList["_posts/*#{DRAFT_SUFIX}.*"].each do |f|
+      sh "rm #{f}"
+    end
+  end
+
+  def draft_name(path)
+    ext = File.extname path
+    File.basename(path, ext) + DRAFT_SUFIX + ext
+  end
+
+end
 
 
 namespace "gae" do
@@ -73,26 +100,35 @@ end
 
 
 desc "Minifies everything"
-task :minify => ['minify:html', 'minify:js']
+task :minify => ['minify:html', 'minify:js', 'minify:css']
 
 namespace "minify" do
 
   desc "Minifies HTML files in output directory"
   task :html do
     HTML.each do |file|
-     sh "sed -e 's/^\s*//g' -e 's/\s*$//g' -e '/^$/d' < #{file} > .tmp"
-     sh "cp .tmp #{file}"
-     sh "rm .tmp"
+     run_on_file "sed -e 's/^\s*//g' -e 's/\s*$//g' -e '/^$/d'", file
     end
   end
 
   desc "Minifies JavaScript files using Google Closure Compiler"
   task :js do
     JS.each do |file|
-     sh "java -jar _lib/compiler.jar --js  #{file} > .tmp"
+     run_on_file 'java -jar _lib/compiler.jar --js', file
+    end
+  end
+
+  desc "Minifies CSS files using YUI Compressor"
+  task :css do
+    CSS.each do |file|
+     run_on_file 'java -jar _lib/yuicompressor-2.4.2.jar', file
+    end
+  end
+
+  def run_on_file(command, file)
+     sh "#{command} #{file} > .tmp"
      sh "cp .tmp #{file}"
      sh "rm .tmp"
-    end
   end
 
 end
