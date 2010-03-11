@@ -62,15 +62,15 @@ h3, h4 {
 }
 
 p {
-  margin-bottom: 0.5em;
+  margin-bottom: 1em;
 }
 
-
+pre code,
 code.snippet {
   display:block;
   padding:10px;
   background-color: #EEEEEE;
-  margin-bottom: 0.5em;
+  margin-bottom: 1em;
 }
 
 code.firebug {
